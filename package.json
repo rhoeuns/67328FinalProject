@@ -1,0 +1,28 @@
+{
+  "name": "adopt",
+  "version": "1.2016.1",
+  "description": "final project for 67328",
+  "author": {
+    "name": "RhoEun Song",
+    "email": "rhoeuns@andrew.cmu.edu"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap-select": "^1.12.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongodb": "^2.2.11",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sweetalert": "^2.0.8"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

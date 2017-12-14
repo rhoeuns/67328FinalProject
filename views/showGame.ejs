@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Member's Page</title>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="./js/game.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+			  <li><a href="/membersOnly">Homepage</a></li>
+			  <li><a href="/showGame" class="active">Image Game</a></li>
+			  <li style="float:right"><a href="/logout">Logout</a></li>
+			  <li style="float:right" class="userName">Welcome, <%= member %></li>
+			</ul>
+		</nav>
+
+		<div>
+			<h3>Do you know all the dog breeds that are out there? TEST YOURSELF!<br>
+				Choose the name of the breed from the options and submit your answers 
+			</h3>
+
+			<table id="scoreTable">
+			  <tr>
+			  	<th colspan="2">Your Score</th>
+			  </tr>
+			  <tr>
+			    <th># Correct</th>
+			    <th># Missed</th>
+			  </tr>
+			  <tr>
+			    <td id="correctScore"></td>
+			    <td id="wrongScore"></td>
+			  </tr>
+			</table>
+
+			<form id="f2">
+				<input type="submit" value="Start Game" />
+        	</form>
+		</div>
+
+		
+
+		<div id="gameDisplay">
+			<div class="breed-image"></div>
+				<form id="gameForm" style="display: none">
+					<div id="game"></div>
+	        		<input type="submit" id="answerButton" value="check answer" />
+	        	</form>
+			</div>
+		</div>
+		
+
+	</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Member's Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="./js/form.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+			  <li><a href="/membersOnly" class="active">Homepage</a></li>
+			  <li><a href="/showGame">Image Game</a></li>
+			  <li style="float:right"><a href="/logout">Logout</a></li>
+			  <li style="float:right" class="userName">Welcome, <%= member %></li>
+			</ul>
+		</nav>
+		
+		<form id="f1">
+            <p id="inputArea">Search for all breeds of dogs</p>
+
+	        <div class="inputs">
+	          	<label>Breed</label>
+	          	<select name="breed" class="selectpicker" data-live-search="true">
+	          		<option></option>
+	          	</select>
+	        </div>
+	        <div class="inputs">
+	          	<label>Size</label>
+	          	<select name="size">
+	              <option></option>
+				  <option value="S">Small</option>
+				  <option value="M">Medium</option>
+				  <option value="L">Large</option>
+				  <option value="XL">X-Large</option>
+				</select>
+	        </div>
+	        <div class="inputs">
+	        	<label>Sex</label>
+	          	<select name="sex">
+	          	  <option></option>
+				  <option value="F">Female</option>
+				  <option value="M">Male</option>
+				</select>
+	        </div>
+	        <div class="inputs">
+	          	<label>Location</label>
+	          	<input type="text" name="location" placeholder="zipcode: ex)15213" required />
+	        </div>
+
+	         <div class="inputs">
+	          	<label>Age</label>
+	          	<select name="age">
+	          	  <option></option>	
+				  <option value="Baby">Baby</option>
+				  <option value="Young">Young</option>
+				  <option value="Adult">Adult</option>
+				  <option value="Senior">Senior</option>
+				</select>
+	        </div>
+            <input type="submit" value="Search" />
+        </form>
+
+        <div id = 'reviews'></div>
+	</body>
+</html>
